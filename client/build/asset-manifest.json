@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/haven-of-wisdom/static/css/main.2ee7c3b6.css",
-    "main.js": "/haven-of-wisdom/static/js/main.51d83cb2.js",
-    "static/js/453.419a5d54.chunk.js": "/haven-of-wisdom/static/js/453.419a5d54.chunk.js",
-    "static/media/churchBg004.jpg": "/haven-of-wisdom/static/media/churchBg004.169ca2c54a01f7e449f6.jpg",
-    "static/media/sundayWorship.jpg": "/haven-of-wisdom/static/media/sundayWorship.721c312bbbf3273957a1.jpg",
-    "static/media/familyPic.jpg": "/haven-of-wisdom/static/media/familyPic.4fd08317e621c2f11bf9.jpg",
-    "static/media/FirstFruit.jpg": "/haven-of-wisdom/static/media/FirstFruit.57f7b02a2ffa796b6807.jpg",
-    "static/media/faithClinic1.jpg": "/haven-of-wisdom/static/media/faithClinic1.811699c6b4f71be7242e.jpg",
-    "static/media/diggingDeep.jpg": "/haven-of-wisdom/static/media/diggingDeep.2d4adbfb186d87f50059.jpg",
-    "static/media/csr2.jpg": "/haven-of-wisdom/static/media/csr2.884fa7ff1c3f6757ccea.jpg",
-    "static/media/2149452674.jpg": "/haven-of-wisdom/static/media/2149452674.08d1befc96de2eb42af8.jpg",
-    "static/media/ChurchBanner3.jpg": "/haven-of-wisdom/static/media/ChurchBanner3.015cefd95ceec9ecd12a.jpg",
-    "static/media/thanksgiving.jpg": "/haven-of-wisdom/static/media/thanksgiving.67449783efa8c6c1c4e2.jpg",
-    "static/media/rccgstudentmanual.jpg": "/haven-of-wisdom/static/media/rccgstudentmanual.7d65910c7899ed1b4ae4.jpg",
-    "static/media/rccglogo.jpg": "/haven-of-wisdom/static/media/rccglogo.9afb1ca7bf59c117f9d0.jpg",
-    "static/media/Pastor-Enoch-Adeboye-.jpg": "/haven-of-wisdom/static/media/Pastor-Enoch-Adeboye-.1361666e5c15b1c8bfd6.jpg",
-    "index.html": "/haven-of-wisdom/index.html",
-    "main.2ee7c3b6.css.map": "/haven-of-wisdom/static/css/main.2ee7c3b6.css.map",
-    "main.51d83cb2.js.map": "/haven-of-wisdom/static/js/main.51d83cb2.js.map",
-    "453.419a5d54.chunk.js.map": "/haven-of-wisdom/static/js/453.419a5d54.chunk.js.map"
+    "main.css": "/static/css/main.18f2c9ba.css",
+    "main.js": "/static/js/main.1a6221fd.js",
+    "static/js/453.419a5d54.chunk.js": "/static/js/453.419a5d54.chunk.js",
+    "static/media/churchBg004.jpg": "/static/media/churchBg004.169ca2c54a01f7e449f6.jpg",
+    "static/media/sundayWorship.jpg": "/static/media/sundayWorship.721c312bbbf3273957a1.jpg",
+    "static/media/familyPic.jpg": "/static/media/familyPic.4fd08317e621c2f11bf9.jpg",
+    "static/media/FirstFruit.jpg": "/static/media/FirstFruit.57f7b02a2ffa796b6807.jpg",
+    "static/media/faithClinic1.jpg": "/static/media/faithClinic1.811699c6b4f71be7242e.jpg",
+    "static/media/diggingDeep.jpg": "/static/media/diggingDeep.2d4adbfb186d87f50059.jpg",
+    "static/media/csr2.jpg": "/static/media/csr2.884fa7ff1c3f6757ccea.jpg",
+    "static/media/2149452674.jpg": "/static/media/2149452674.08d1befc96de2eb42af8.jpg",
+    "static/media/ChurchBanner3.jpg": "/static/media/ChurchBanner3.015cefd95ceec9ecd12a.jpg",
+    "static/media/thanksgiving.jpg": "/static/media/thanksgiving.67449783efa8c6c1c4e2.jpg",
+    "static/media/rccgstudentmanual.jpg": "/static/media/rccgstudentmanual.7d65910c7899ed1b4ae4.jpg",
+    "static/media/rccglogo.jpg": "/static/media/rccglogo.9afb1ca7bf59c117f9d0.jpg",
+    "static/media/Pastor-Enoch-Adeboye-.jpg": "/static/media/Pastor-Enoch-Adeboye-.1361666e5c15b1c8bfd6.jpg",
+    "index.html": "/index.html",
+    "main.18f2c9ba.css.map": "/static/css/main.18f2c9ba.css.map",
+    "main.1a6221fd.js.map": "/static/js/main.1a6221fd.js.map",
+    "453.419a5d54.chunk.js.map": "/static/js/453.419a5d54.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2ee7c3b6.css",
-    "static/js/main.51d83cb2.js"
+    "static/css/main.18f2c9ba.css",
+    "static/js/main.1a6221fd.js"
   ]
 }

@@ -26,7 +26,7 @@ function Homepage() {
 
   const fetchEvent =async()=>{
       try {
-        const response = await axios.get('/api/event')
+        const response = await axios.get('http://localhost:5000/api/event')
         const resp = response.data.event
         setEvent(resp)
       } catch (error) {
@@ -37,7 +37,7 @@ function Homepage() {
 
     const fetchDailyDevotion =async()=>{
       try {
-        const response = await axios.get('/api/dailyDevotion')
+        const response = await axios.get('http://localhost:5000/api/dailyDevotion')
         const resp = response.data.note
         setOpenHeaven(resp)
         console.log(response)
@@ -51,7 +51,7 @@ function Homepage() {
     const fetchSundaySchool =async()=>{
       try {
         console.log('fetching daily devotion')
-        const response = await axios.get('/api/sundaySchool')
+        const response = await axios.get('http://localhost:5000/api/sundaySchool')
         const resp = response.data.note
         setSundaySchoolNote(resp)
         console.log(response)

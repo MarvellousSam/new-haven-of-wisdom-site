@@ -1,5 +1,4 @@
 {
-  "homepage": "https://github.com/MarvellousSam/HOW-website.git",
   "name": "server-and-client-setup",
   "version": "1.0.0",
   "description": "",
@@ -9,6 +8,7 @@
     "server": "cd server && nodemon server.js",
     "client": "cd client && npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
   "keywords": [],
   "author": "",

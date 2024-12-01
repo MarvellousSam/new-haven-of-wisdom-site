@@ -24,7 +24,7 @@ function Loginpage() {
 
     const submit=async()=>{
         try {
-            const response = await axios.post('/api/login', form)
+            const response = await axios.post('http://localhost:5000/api/login', form)
             const token = response.data.token
             sessionStorage.setItem('token', token)
             const storedToken = sessionStorage.getItem('token')

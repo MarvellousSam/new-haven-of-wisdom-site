@@ -13,7 +13,7 @@ function AdminPage() {
   const verifyUser =async()=>{
     console.log(token)
     try {
-      await axios.get('/api/admin',
+      await axios.get('http://localhost:5000/api/admin',
         {
           headers:{
               Authorization: `Bearer ${token}`
@@ -39,7 +39,7 @@ function AdminPage() {
       const uploadedImageUrl = response.data.secure_url;
       console.log('Upload successful:', uploadedImageUrl);
 
-      await axios.post(`/api/event`, {imageUrl: uploadedImageUrl},{
+      await axios.post(`http://localhost:5000/api/event`, {imageUrl: uploadedImageUrl},{
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -55,7 +55,7 @@ function AdminPage() {
   const deleteEvent=async(id)=>{
     try {
       if(window.confirm('Are you sure you want to delete this event?')){
-        await axios.delete(`/api/event/${id}`, {
+        await axios.delete(`http://localhost:5000/api/event/${id}`, {
           headers:{
             Authorization: `Bearer ${token}`
           }
@@ -80,7 +80,7 @@ function AdminPage() {
 
   const fetchEvent =async()=>{
       try {
-        const response = await axios.get('/api/event')
+        const response = await axios.get('http://localhost:5000/api/event')
         const resp = response.data.event
         setEvent(resp)
         console.log(resp)
@@ -94,7 +94,7 @@ function AdminPage() {
   const uploadDailyDevotion=async(e)=>{
     try {
       console.log(openHeaven)
-      await axios.post('/api/dailyDevotion', {contentType: 'openHeaven', note: openHeaven},{
+      await axios.post('http://localhost:5000/api/dailyDevotion', {contentType: 'openHeaven', note: openHeaven},{
         headers:{
           Authorization: `Bearer ${token}`
         }
@@ -109,7 +109,7 @@ function AdminPage() {
   const uploadSundaySchool=async(e)=>{
     try {
       console.log(openHeaven)
-      await axios.post('/api/sundaySchool', {contentType: 'sundaySchool', note: sundaySchool},{
+      await axios.post('http://localhost:5000/api/sundaySchool', {contentType: 'sundaySchool', note: sundaySchool},{
         headers:{
           Authorization: `Bearer ${token}`
         }
