@@ -1,0 +1,606 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: rgb(255, 255, 255);
+}
+
+code {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+  list-style-type: none;
+}
+
+.padding{
+  padding: 20px;
+
+}
+.h2{
+  font-size: 35px;
+  text-align: center;
+  color: rgb(4, 4, 85);
+  margin: 20px;
+}
+.h3{
+  font-size: 30px;
+  text-align: center;
+  color: rgb(4, 4, 85);
+}
+.dark{
+  color: rgb(2, 18, 97);
+}
+.italic{
+  margin-top: 20px;
+  color: rgb(222, 222, 222);
+  font-size: 20px;
+  font-style: italic;
+}
+.accent{
+  background-color: rgba(169, 123, 169, 0.515);
+  color: rgb(0, 0, 0);
+}
+.smallText{
+  font-size: 15px;
+}
+.grey{
+  background-color: rgba(197, 192, 192, 0.603);
+}
+.black{
+  background-color: black;
+  color: white;
+}
+.darkGrey{
+  background-color: rgb(145, 144, 144);
+}
+.white{
+  color: white;
+}
+
+.toggleIcon{
+  color: rgb(51, 1, 53);
+}
+.navContainer{
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 100vw;
+  height: 80px;
+  display: flex;
+  padding: 0px 10px;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 1px 1px 1px rgba(174, 0, 255, 0.512);
+}
+.navContainer h1{
+  color: rgb(1, 15, 54);
+  
+  font-size: 25px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+.navContainer ul li{
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 20px;
+  color: rgb(1, 15, 54);
+}
+.navContainer ul li:hover{
+  cursor: pointer;
+}
+.flex{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuDropdown{
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  z-index: 1;
+  background-color: rgb(67, 1, 67);
+  color: white;
+  width: 80%;
+  height: 90vh;
+  padding: 10px;
+  animation: slideInAnimation 0.7s ;
+}
+@keyframes slideInAnimation {
+  0%{
+    transform: translateX(50%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+.logo{
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+}
+.bigLogo{
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  float: right;
+}
+
+.navContainer .navLink:hover{
+  border-bottom: 1px solid;
+  border-color: rgb(226, 4, 4);
+}
+
+.displaySpread{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.landingPage2{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url('./images/Pastor-Enoch-Adeboye-.jpg');
+  text-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+  opacity: 0.9;
+}
+.landingPage{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: url('./images/Pastor-Enoch-Adeboye-.jpg');
+  text-wrap: wrap;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 70px;
+  animation: fadeInZoom 1s ease-in;
+  animation-iteration-count: 1;
+}
+@keyframes fadeInAnimation {
+  0%{
+    opacity: 0.3;
+    transform: translateX(50%);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeInZoom {
+  0%{
+    opacity: 0.3;
+    transform: scale(0.5);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.landingPage h1{
+  font-size: 40px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+
+.landingPage p{
+  font-size: 25px;
+  color: rgb(214, 210, 210);
+}
+.textDecorate{
+  border-bottom: 5px solid rgb(136, 0, 255);
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+}
+.eventHeader{
+  margin-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(1, 1, 82);
+  border-bottom: 2px solid red;
+}
+button{
+  background-color: rgb(255, 255, 255);
+  color: rgb(9, 90, 2);
+  border: 0px solid ;
+  border-radius: 5px;
+  padding: 5px;
+  height: 50px;
+  outline: 0px;
+  font-size: 30px;
+}
+button:hover{
+  background-color: rgb(1, 43, 1);
+  color: white;
+}
+
+
+.containerFluid{
+  width: 100vw;
+  height: auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.container{
+  width: 80vw;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.containerBg{
+  width: 90vw;
+  height: auto;
+  display: block;
+  margin: auto;
+  background-image: url('./images/churchBg004.jpg');
+}
+.flexContainer{
+  display: flex;
+  width: 90vw;
+  height: 350px;
+  border-radius: 5px;
+  justify-self: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.rowGap{
+  row-gap: 20px;
+}
+.rowGap2{
+  row-gap: 50px;
+}
+.gridContainer1{
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  column-gap: 20px;
+}
+.gridContainer2{
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+  column-gap: 20px;
+}
+.gridContainer3{
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  column-gap: 20px;
+}
+.gridContainer4{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  column-gap: 20px;
+}
+
+.noGap{
+  column-gap: 0px;
+}
+.uploadBtn{
+  font-size: 15px;
+  width: 100px;
+  height: 40px;
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: rgb(42, 1, 52);
+  color: white;
+  margin-top: 10px;
+}
+.uploadBtn:hover{
+  background-color: rgb(87, 4, 107);
+}
+.btn{
+  display: block;
+  margin: auto;
+  font-size: large;
+  width: 100px;
+  height: 50px;
+  border: 0px solid;
+  border-radius: 5px;
+  background-color: rgb(42, 1, 52);
+  color: white;
+}
+.btn:hover{
+  background-color: rgb(71, 3, 114);
+  color: rgb(255, 255, 255);
+}
+.announcement{
+  width: 100%;
+  height: 350px;
+  text-align: center;
+  padding-top: 150px;
+  background: url('./images/familyPic.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: x-large;
+  border-radius: 10px;
+  color: blue;
+}
+.sundayWorshipImg{
+  display: block;
+  margin: auto;
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  background: url('./images/sundayWorship.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.tuesdayWorshipImg{
+  height: 300px;
+  width: 100%;
+  background: url('./images/diggingDeep.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.thursdayWorshipImg{
+  height: 300px;
+  width: 100%;
+  background: url('./images/faithClinic1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.offeringImg{
+  height: 300px;
+  width: 100%;
+  background: url('./images/FirstFruit.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+  color: white;
+  font-size: large;
+  text-align: center;
+  border: 0px solid;
+}
+.csrImg{
+  height: 300px;
+  width: 100%;
+  background: url('./images/csr2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+  color: white;
+  font-size: larger;
+  text-align: center;
+  border: 0px solid;
+}
+.thanksgivingImg{
+  height: 350px;
+  width: 100%;
+  background: url('./images/thanksgiving.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  border: 0px solid;
+  padding-top: 100px;
+}
+.breakthroughImg{
+  height: 350px;
+  width: 100%;
+  background: url('./images/ChurchBanner3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  border: 0px solid;
+  padding-top: 100px;
+}
+.youthServiceImg{
+  height: 350px;
+  width: 100%;
+  background: url('./images/2149452674.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 7px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  text-align: center;
+  border: 0px solid;
+  padding-top: 100px;
+}
+.openHeavenImg{
+  height: 500px;
+  width: 100%;
+  background: url('./images/openheaven.jpeg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 7px;
+  background-color: rgb(129, 129, 129);
+  font-size: larger;
+  text-align: center;
+  border: 0px solid;
+}
+.sundaySchoolImg{
+  height: 500px;
+  width: 100%;
+  background: url('./images/rccgstudentmanual.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 7px;
+  background-color: rgb(0, 0, 0);
+  font-size: larger;
+  text-align: center;
+  border: 0px solid;
+}
+.noteInput{
+  height: 500px;
+  width: 100%;
+  border: 1px solid rgb(52, 51, 51);
+  border-radius: 5px;
+}
+.eventCard{
+  display: block;
+  margin: auto;
+  width: 90%;
+  height: 350px;
+  border: 0px solid;
+  margin-top: 50px;
+}
+.textContainer{
+  font-size: 25px;
+  height: 350px;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
+.textContainer2{
+  font-size: 25px;
+  height: 300px;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.dec1{
+  font-size: 40px;
+  font-weight: 600;
+}
+.red{
+  color: red;
+}
+.blue{
+  color: rgb(0, 3, 68);
+}
+.p{
+  margin-bottom: 70px;
+}
+.card{
+  height: 250px;
+  width: 400px;
+  background-color: rgb(218, 186, 186);
+  background: purple;
+  border-radius: 10px;
+  border: 0px;
+}
+.padding1{
+  padding: 20px;
+}
+.padding2{
+  padding: 70px;
+}
+.padding3{
+  padding: 200px;
+}
+.margin1{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.margin2{
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.large{
+  display: block ;
+}
+.mobile{
+  display: none;
+}
+hr{
+  display: none;
+  margin: 20px;
+  color: black;
+}
+.hr{
+  display: block;
+  margin-top: 50px;
+}
+footer{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.right{
+  float: right;
+}
+.greyText{
+  color: rgb(84, 84, 84);
+}
+.top{
+  text-align: start;
+}
+.input{
+  display: block;
+  margin: auto;
+  width: 70vw;
+  height: 70px;
+  border: 0px solid;
+  border-radius: 5px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+.page{
+  height: 70vh;
+}
+.textCenter{
+  text-align: center;
+}
+.longTextContainer{
+  height: 600px;
+}
+@media screen and (max-width: 500px) {
+  hr{
+    display: block;
+  }
+  .container{
+    width: 90vw;
+  }
+  .gridContainer1, .gridContainer2, .gridContainer3{
+    grid-template-columns: 1fr;
+  }
+  .textContainer, .textContainer2{
+    font-size: larger;
+  }
+  .landingPage{
+    display: block;
+    padding: 20px;
+    padding-top: 100px;
+    margin-bottom: 50px;
+  }
+  .mobile{
+    display: block;
+  }
+  .large{
+    display: none;
+  }
+  .sundayWorshipImg{
+    width: 250px;
+    height: 250px;
+  }
+  .announcement{
+    border-radius: 0px;
+  }
+  .thanksgivingImg{
+    padding: 20px;
+  }
+  .bigLogo{
+    float: left;
+  }
+  .longTextContainer{
+    height: 700px;
+  }
+}
