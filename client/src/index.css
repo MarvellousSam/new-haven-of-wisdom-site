@@ -89,6 +89,11 @@ ul{
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
 }
+.navList{
+  font-size: 20px;
+  margin-top: 10px;
+  border-bottom: 2px rgba(221, 0, 255, 0.318) solid;
+}
 .navContainer ul li{
   font-size: 15px;
   font-weight: 700;

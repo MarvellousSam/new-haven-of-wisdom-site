@@ -50,10 +50,10 @@ function Navbar() {
                 </header>
                 <main>
                   <ul>
-                    <li onClick={()=>{navigate('/')}}>Home</li>
-                    <li onClick={()=>{navigate('/about')}}>About us</li>
-                    <li onClick={()=>{navigate('/mission')}}>Mission</li>
-                    <li onClick={()=>{navigate('/giving')}}>Online giving</li>
+                    <li className='navList' onClick={()=>{navigate('/')}}>Home</li>
+                    <li className='navList' onClick={()=>{navigate('/about')}}>About us</li>
+                    <li className='navList' onClick={()=>{navigate('/mission')}}>Mission</li>
+                    <li className='navList' onClick={()=>{navigate('/giving')}}>Online giving</li>
                   </ul>
                 </main>
              </div>
