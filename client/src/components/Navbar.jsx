@@ -42,7 +42,7 @@ function Navbar() {
               <FiMenu className='toggleIcon' size={40}/>
             </div>
           </div>
-          <div>
+          
             {show && 
              <div className='menuDropdown'>
                 <header>
@@ -58,7 +58,7 @@ function Navbar() {
                 </main>
              </div>
             }
-          </div>
+          
     </>
 
 
