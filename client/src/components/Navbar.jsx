@@ -21,7 +21,7 @@ function Navbar() {
   
   
   return (
-    <>
+    <div className='sticky'>
         <div className='navContainer'>
             <div className='navLogo'>
               <img className='logo' src={Logo} alt="" onClick={()=>{navigate('/login')}}/>
@@ -59,7 +59,7 @@ function Navbar() {
              </div>
             }
           
-    </>
+    </div>
 
 
   )
