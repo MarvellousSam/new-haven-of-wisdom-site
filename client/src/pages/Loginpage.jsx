@@ -32,6 +32,7 @@ function Loginpage() {
             navigate('/admin')
         } catch (error) {
             console.log(error)
+            window.alert("Error loggin in")
         }
     }
   return (

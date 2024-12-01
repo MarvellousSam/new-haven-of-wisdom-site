@@ -21,7 +21,7 @@ function Navbar() {
   
   
   return (
-    <div className='sticky'>
+    <div className='navBar'>
         <div className='navContainer'>
             <div className='navLogo'>
               <img className='logo' src={Logo} alt="" onClick={()=>{navigate('/login')}}/>
