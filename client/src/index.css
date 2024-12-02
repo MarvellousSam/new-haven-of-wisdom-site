@@ -431,7 +431,7 @@ button:hover{
   padding-top: 100px;
 }
 .openHeavenImg{
-  height: 350px;
+  height: 400px;
   width: 100%;
   background: url('./images/openheaven.jpeg');
   background-repeat: no-repeat;
@@ -443,7 +443,7 @@ button:hover{
   border: 0px solid;
 }
 .sundaySchoolImg{
-  height: 350px;
+  height: 400px;
   width: 100%;
   background: url('./images/rccgstudentmanual.jpg');
   background-repeat: no-repeat;
@@ -470,7 +470,7 @@ button:hover{
 }
 .textContainer{
   font-size: 25px;
-  height: 350px;
+  height: 400px;
   width: 100%;
   padding: 20px;
   overflow: hidden;

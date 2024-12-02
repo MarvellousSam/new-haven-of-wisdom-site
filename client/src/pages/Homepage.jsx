@@ -148,7 +148,7 @@ function Homepage() {
             <div className='container margin3'>
               <div className="gridContainer3">
                 <div className="textContainer grey">
-                  <h2 className="h2">Daily Devotion</h2>
+                  <h3>Daily Devotion</h3>
                   <p>
                     {openHeavenNote.note}
                   </p>
@@ -164,7 +164,7 @@ function Homepage() {
             <div className='container margin1'>
                   <div className="gridContainer3">
                     <div className="textContainer grey">
-                      <h2 className="h2">Sunday School</h2>
+                      <h3>Sunday School</h3>
                       <p>
                         {sundaySchoolNote.note}
                       </p>
