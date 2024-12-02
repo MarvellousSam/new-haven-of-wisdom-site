@@ -581,7 +581,8 @@ footer{
   text-align: center;
 }
 .longTextContainer{
-  height: 500px;
+  height: auto;
+  padding: 10px;
 }
 @media screen and (max-width: 500px) {
   hr{
@@ -638,6 +639,7 @@ footer{
     float: left;
   }
   .longTextContainer{
-    height: 600px;
+    height: auto;
+    padding: 10px;
   }
 }
