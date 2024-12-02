@@ -11,16 +11,13 @@ function Homepage() {
   const [openHeavenNote, setOpenHeaven] = useState({
     note: 'Open heaven is a daily devotional book written by the General Overseer of the Redeemed christian church of God, Pastor Enoch'+
     ' Adejare Adeboye . Pastor EA Adeboye is a prolific writer and he has a ' +
-    'PhD in Applied mathematics from the university of Lagos, nigeria where he was formerly a senio lecturer. He is also an anointed' + 
-    'favourite guest speaker at many church conferencess and conventions all over the world. Pastor Adeboye is a man filled and operate' + 
-    'in the power of the Holy Spirit. A devoted prophet of God, whose passionate mission and goal is to spread the gospel of Jesus '+
-    'Christ to the ends of the earth by proclaiming the power of God. He is married to Pastor (Mrs.) Folu Adeboye and they are blessed '+
-    'with four children, many grandchildren in addition to the millions of spirtiual children all over the world.'
+    'PhD in Applied mathematics from the university of Lagos, nigeria where he was formerly a senior lecturer. He is also an anointed ' + 
+    'favourite guest speaker at many church conferences and conventions all over the world. Pastor Adeboye is a man filled with the Holy Spirit' 
   })
 
 
   const [sundaySchoolNote, setSundaySchoolNote] = useState({
-    note: ''
+    note: 'Sunday School is a devotional book for Sunday service.'
   })
 
 
@@ -35,31 +32,6 @@ function Homepage() {
     }
 
 
-    const fetchDailyDevotion =async()=>{
-      try {
-        const response = await axios.get('https://haven-of-wisdom-server.onrender.com/api/dailyDevotion')
-        const resp = response.data.note
-        setOpenHeaven(resp)
-        console.log(response)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-
-
-
-    const fetchSundaySchool =async()=>{
-      try {
-        console.log('fetching daily devotion')
-        const response = await axios.get('https://haven-of-wisdom-server.onrender.com/api/sundaySchool')
-        const resp = response.data.note
-        setSundaySchoolNote(resp)
-        console.log(response)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-
     const eventImage = (
       <div className='container'>
         <h2 className='eventHeader'>UPCOMING EVENT</h2>
@@ -73,8 +45,6 @@ function Homepage() {
   
   useEffect(()=>{
     fetchEvent()
-    fetchDailyDevotion()
-    fetchSundaySchool()
   },[] )
   return (
     <>
@@ -121,37 +91,7 @@ function Homepage() {
         <hr />
 
 
-
-        <div className='container'>
-          <h2 className="h2">Daily Devotion</h2>
-          <div className="gridContainer3">
-            <div className="textContainer longTextContainer">
-              <p>
-                {openHeavenNote.note}
-              </p>
-            </div>
-            <div className="openHeavenImg">
-
-            </div>
-          </div>
-        </div>
-
-
-        {sundaySchoolNote.note && (
-                  <div className='container'>
-                      <h2 className="h2">Sunday School</h2>
-                      <div className="gridContainer3">
-                        <div className="textContainer longTextContainer">
-                          <p>
-                            {sundaySchoolNote.note}
-                          </p>
-                        </div>
-                        <div className="sundaySchoolImg">
-            
-                        </div>
-                      </div>
-                </div>
-        )}
+        
 
 
         <div className='container'>
@@ -196,6 +136,40 @@ function Homepage() {
               Holds at every 2nd Saturday of the month
             </div>
           </div>
+        </div>
+
+
+        {/* Sunday school and open heaven */}
+
+        <div className='container margin2'>
+          <h2 className="h2">Daily Devotion</h2>
+          <div className="gridContainer3">
+            <div className="textContainer">
+              <p>
+                {openHeavenNote.note}
+              </p>
+            </div>
+            <div className="openHeavenImg">
+
+            </div>
+          </div>
+          <button className='btn margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
+        </div>
+
+        
+        <div className='container margin2'>
+              <h2 className="h2">Sunday School</h2>
+              <div className="gridContainer3">
+                <div className="textContainer">
+                  <p>
+                    {sundaySchoolNote.note}
+                  </p>
+                </div>
+                <div className="sundaySchoolImg">
+    
+                </div>
+              </div>
+              <button className='btn margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
         </div>
 
 

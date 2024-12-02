@@ -1,6 +1,7 @@
 import React from 'react'
-import {useNavigate, NavLink} from 'react-router-dom'
-import { FiMenu, FiX, FiArrowDown } from "react-icons/fi";
+import {useNavigate} from 'react-router-dom'
+import {FaUser} from 'react-icons/fa'
+import { FiMenu, FiX, FiUser  } from "react-icons/fi";
 import Logo from '../images/rccglogo.jpg'
 import { useState } from 'react';
 function Navbar() {
@@ -24,7 +25,7 @@ function Navbar() {
     <div className='navBar'>
         <div className='navContainer'>
             <div className='navLogo'>
-              <img className='logo' src={Logo} alt="" onClick={()=>{navigate('/login')}}/>
+              <img className='logo' src={Logo} alt=""/>
             </div>
             <div className='navBrand'>
               <h1 className='mobile'>H.O.W</h1>
@@ -36,6 +37,7 @@ function Navbar() {
                 <li className='navLink' onClick={()=>{navigate('/about')}}> WHO ARE WE</li>
                 <li className='navLink' onClick={()=>{navigate('/mission')}}>WHAT WE DO</li>
                 <li className='navLink' onClick={()=>{navigate('/giving')}}> ONLINE GIVING  </li>
+                <li className='navLink' onClick={()=>{navigate('/login')}}> <FaUser size={20} color='blue'/>  </li>
               </ul>
             </div>
             <div className="mobile" onClick={toggleSideMenu}>
@@ -54,6 +56,10 @@ function Navbar() {
                     <li className='navList' onClick={()=>{navigate('/about')}}>About us</li>
                     <li className='navList' onClick={()=>{navigate('/mission')}}>Mission</li>
                     <li className='navList' onClick={()=>{navigate('/giving')}}>Online giving</li>
+                    <li className='navList' onClick={()=>{navigate('/event')}}>Upcoming Events</li>
+                    <li className='navList' onClick={()=>{navigate('/testimony')}}>Testimony</li>
+                    <li className='navList' onClick={()=>{navigate('/dailydevotion')}}>Study</li>
+                    <li className='navList' onClick={()=>{navigate('/login')}}>Admin</li>
                   </ul>
                 </main>
              </div>

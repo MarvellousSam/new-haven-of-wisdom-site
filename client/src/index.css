@@ -165,7 +165,7 @@ ul{
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 70px;
-  opacity: 0.9;
+  /* opacity: 0.9; */
 }
 .landingPage{
   width: 100%;
@@ -567,7 +567,7 @@ footer{
   text-align: center;
 }
 .longTextContainer{
-  height: 600px;
+  height: 500px;
 }
 @media screen and (max-width: 500px) {
   hr{
@@ -608,6 +608,6 @@ footer{
     float: left;
   }
   .longTextContainer{
-    height: 700px;
+    height: 600px;
   }
 }

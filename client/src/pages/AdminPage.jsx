@@ -7,11 +7,11 @@ function AdminPage() {
   const [event, setEvent] = useState([])
   const [openHeaven, setOpenHeaven] = useState('')
   const [sundaySchool, setSundaySchool] = useState('')
+  const [testimony, setTestimony] = useState([])
   const token = sessionStorage.getItem('token')
 
 
   const verifyUser =async()=>{
-    console.log(token)
     try {
       await axios.get('https://haven-of-wisdom-server.onrender.com/api/admin',
         {
@@ -120,6 +120,28 @@ function AdminPage() {
     }
   }
 
+
+  const fetchTestimony =async()=>{
+    try {
+      const response = await axios.get('https://haven-of-wisdom-server.onrender.com/api/testimony')
+      const resp = response.data.event
+      setTestimony(resp)
+      console.log(resp)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+
+
+  const testimonyView = testimony.map((items)=>(
+    <li key={items._id}>
+      {items.note}
+    </li>
+  ))
+
+
+
   const logOut=()=>{
     sessionStorage.clear()
     window.alert('User logged out successfully')
@@ -128,18 +150,30 @@ function AdminPage() {
   useEffect(()=>{
     verifyUser()
     fetchEvent()
+    fetchTestimony()
   }, [])
 
 
   return (
     <>
         <Navbar/>
+
+        <header>
+              <h2 className='h3 margin1'>Admin Page</h2>
+        </header>
+
+      {
+        testimony.length==0? '' :
+          <div className='containerFluid grey'>
+            <h2 className='textCenter'>Testimony</h2>
+            <ol>
+              {testimonyView}
+            </ol>
+          </div>
+      }
+
+
         <div className='container grey margin1 padding1'>
-
-            <header>
-              <h2 className='h3'>Admin Page</h2>
-            </header>
-
 
             <div>
               <h2>Upload Event Flier</h2>
@@ -164,7 +198,9 @@ function AdminPage() {
               <textarea className='noteInput' name="note" id="note" value={sundaySchool} onChange={(e)=>{setSundaySchool(e.target.value)}}></textarea> 
               <button className='uploadBtn' onClick={uploadSundaySchool}>Upload</button>   
             </div>
-            <button className='btn' onClick={logOut}>Log Out</button>
+
+
+            <button className='btn margin2' onClick={logOut}>Log Out</button>
         </div>
     </>
   )

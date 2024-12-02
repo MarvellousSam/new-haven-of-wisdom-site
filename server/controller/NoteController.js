@@ -19,7 +19,7 @@ const createDaliyDevotion=async(req,res)=>{
     const {contentType, note} = req.body
     console.log(note)
     try {
-        const dailyDevotion = await Notes.create({
+        await Notes.create({
             note: note,
             contentType, contentType
         })
@@ -49,9 +49,9 @@ const createSundaySchool=async(req,res)=>{
     const {contentType, note} = req.body
     console.log(note)
     try {
-        const dailyDevotion = await Notes.create({
+        await Notes.create({
             note: note,
-            contentType, contentType
+            contentType: contentType
         })
         res.json({message: 'Sunday school note added'})
         console.log('Sunday School created successfully')
@@ -60,5 +60,34 @@ const createSundaySchool=async(req,res)=>{
     }
 }
 
+const fetchTestimony=async(req,res)=>{
+    const {testimony} = req.body
+    console.log(testimony)
+    try {
+        const testimony = await Notes.find({
+            contentType: 'testimony'
+        })
+        res.json({testimony: testimony})
+        console.log('Testimony fetched')
+    } catch (error) {
+        console.log(error)
+    }
+}
 
-module.exports = {fetchDailyDevotion,createDaliyDevotion, fetchSundaySchool, createSundaySchool}
+const createTestimony=async(req,res)=>{
+    const {testimony} = req.body
+    console.log(testimony)
+    try {
+        await Notes.create({
+            note: testimony,
+            contentType: 'testimony'
+        })
+        res.json({message: 'Testimony added'})
+        console.log('Testimony uploaded')
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+
+module.exports = {fetchDailyDevotion,createDaliyDevotion, fetchSundaySchool, createSundaySchool, createTestimony, fetchTestimony}

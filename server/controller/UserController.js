@@ -3,7 +3,7 @@ const nodemailer = require("nodemailer")
 const jwt = require('jsonwebtoken')
 
 
-const jwtSecret = process.env.JWT_SECRET || '12345'
+const jwtSecret = process.env.JWT_SECRET
 
 
 const generateToken = (id)=>{
