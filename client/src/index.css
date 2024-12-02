@@ -595,7 +595,7 @@ footer{
   }
   .textContainer{
     font-size: larger;
-    height: 450px;
+    height: 500px;
     margin-bottom: 5px;
   }
   .textContainer2{
@@ -611,6 +611,12 @@ footer{
     padding: 20px;
     padding-top: 100px;
     margin-bottom: 50px;
+  }
+  .openHeavenImg{
+    display: none;
+  }
+  .sundaySchoolImg{
+    display: none;
   }
   .mobile{
     display: block;

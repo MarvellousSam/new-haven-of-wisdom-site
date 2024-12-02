@@ -146,9 +146,9 @@ function Homepage() {
 
         
             <div className='container margin3'>
-              <h2 className="h2">Daily Devotion</h2>
               <div className="gridContainer3">
                 <div className="textContainer grey">
+                  <h2 className="h2">Daily Devotion</h2>
                   <p>
                     {openHeavenNote.note}
                   </p>
@@ -162,9 +162,9 @@ function Homepage() {
 
         
             <div className='container margin1'>
-                  <h2 className="h2">Sunday School</h2>
                   <div className="gridContainer3">
                     <div className="textContainer grey">
+                      <h2 className="h2">Sunday School</h2>
                       <p>
                         {sundaySchoolNote.note}
                       </p>
@@ -183,14 +183,14 @@ function Homepage() {
               <h2 className='h2'>Online Giving</h2>
             </header>
 
-            <div className='gridContainer2 rowGap2'>
+            <div className='gridContainer2 rowGap1'>
 
               <div className='offeringImg'>
                 <p className='padding2'>Pay your offering, tithe and first fruit.</p>
                 <button className='btn' onClick={()=>{navigate('/giving')}}>Pay Now</button> 
               </div>
 
-              <div className='textContainer2'>
+              <div className='textContainer3'>
                 <p> 
                   It is the commandment of God to us is children to pay our tithe, first fruit and offering.<br />
                   God wants us to be a cheerful giver - II Cor 9:7. <br />
@@ -201,12 +201,11 @@ function Homepage() {
 
               <hr />
 
-              <div className='textContainer2'>
+              <div className='textContainer3'>
                 <p>
                   You can support the mission by donating <br />
                   to facilitate the smooth running of the kingdom's business. <br />
-                  We are assuring you that the Lord Almighty will bless you as you support us.<br />
-                  God bless you
+                  The Lord Almighty will bless you as you support us.<br />
                 </p>
               </div>
 
