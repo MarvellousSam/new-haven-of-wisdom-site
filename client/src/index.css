@@ -269,6 +269,7 @@ button:hover{
   justify-content: space-between;
   align-items: center;
 }
+
 .rowGap{
   row-gap: 20px;
 }
@@ -326,6 +327,9 @@ button:hover{
 .btn:hover{
   background-color: rgb(71, 3, 114);
   color: rgb(255, 255, 255);
+}
+.boldText{
+  font-weight: 700;
 }
 .announcement{
   width: 100%;
@@ -427,7 +431,7 @@ button:hover{
   padding-top: 100px;
 }
 .openHeavenImg{
-  height: 500px;
+  height: 350px;
   width: 100%;
   background: url('./images/openheaven.jpeg');
   background-repeat: no-repeat;
@@ -439,7 +443,7 @@ button:hover{
   border: 0px solid;
 }
 .sundaySchoolImg{
-  height: 500px;
+  height: 350px;
   width: 100%;
   background: url('./images/rccgstudentmanual.jpg');
   background-repeat: no-repeat;
@@ -472,6 +476,13 @@ button:hover{
   overflow: hidden;
 }
 .textContainer2{
+  font-size: 25px;
+  height: 300px;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+}
+.textContainer3{
   font-size: 25px;
   height: 300px;
   width: 100%;
@@ -516,6 +527,9 @@ button:hover{
 .margin2{
   margin-top: 70px;
   margin-bottom: 70px;
+}
+.margin3{
+  margin-top: 100px;
 }
 .grid{
   display: grid;
@@ -579,8 +593,18 @@ footer{
   .gridContainer1, .gridContainer2, .gridContainer3{
     grid-template-columns: 1fr;
   }
-  .textContainer, .textContainer2{
+  .textContainer{
     font-size: larger;
+    height: 450px;
+    margin-bottom: 5px;
+  }
+  .textContainer2{
+    font-size: larger;
+    height: 450px;
+  }
+  .textContainer3{
+    font-size: larger;
+    height: 200px;
   }
   .landingPage{
     display: block;

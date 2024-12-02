@@ -12,12 +12,15 @@ function Homepage() {
     note: 'Open heaven is a daily devotional book written by the General Overseer of the Redeemed christian church of God, Pastor Enoch'+
     ' Adejare Adeboye . Pastor EA Adeboye is a prolific writer and he has a ' +
     'PhD in Applied mathematics from the university of Lagos, nigeria where he was formerly a senior lecturer. He is also an anointed ' + 
-    'favourite guest speaker at many church conferences and conventions all over the world. Pastor Adeboye is a man filled with the Holy Spirit' 
+    'favourite guest speaker at many church conferences and conventions all over the world.' 
   })
 
 
   const [sundaySchoolNote, setSundaySchoolNote] = useState({
-    note: 'Sunday School is a devotional book for Sunday service.'
+    note: 'Sunday School is a devotional book for Sunday service. The Bible says in Romans 10:17 that faith comes '+
+    'hearing and hearing by the word of God. The only source of real faith is the word of God. If faith comes by hearing '+
+    'and hearing by the word of God, how will someone have faith when he or she has refused to hear the word of God? ' +
+    'When you are totally out of tune with the word of God, you do not hear anything, so faith cannot come.'
   })
 
 
@@ -58,10 +61,10 @@ function Homepage() {
 
       <div className="container">
         <div className='gridContainer1'>
-          <div className='textContainer grey'>
-            <span className='dec1'>HAVEN OF WISDOM PARISH</span> IS NOT JUST A CHURCH <br />
+          <div className='grey padding1'>
+            <span className='dec1'>HAVEN OF WISDOM</span> <br /> IS NOT JUST A CHURCH <br />
             WE ARE ONE BIG <span className='red'>FAMILY</span> <br />
-            IN RCCG
+            IN THE BODY OF CHRIST
           </div>
           <div className='announcement'>
               
@@ -79,7 +82,7 @@ function Homepage() {
             <div className='sundayWorshipImg'>
                   
             </div>
-            <div className='textContainer order'>
+            <div className='textContainer order boldText'>
                 OUR SUNDAY SERVICE HOLDS <span className='dec1'>EVERY SUNDAY</span> <br />
                 <br />
                 JOIN US TO EXPERIENCE THE MIGHTY HAND OF GOD IN YOUR LIFE AS HE TRANSFORMS YOUR LIFE. <br /> <br />
@@ -100,7 +103,7 @@ function Homepage() {
           </header>
             <div className='gridContainer2 rowGap'>
                 <div className="gridContainer2 noGap">
-                    <div className="textContainer2 grey">
+                    <div className="textContainer3 grey">
                       <h2>Digging Deep</h2>
                       <p>Join us every <span className='red'>Tuesday</span> where we get to know more about the Word of God</p>
                     </div>
@@ -111,7 +114,7 @@ function Homepage() {
 
 
                 <div className="gridContainer2 noGap">
-                  <div className="textContainer2 grey">
+                  <div className="textContainer3 grey">
                       <h2>Faith Clinic</h2>
                       <p>Join us every <span className="red">Thursday</span> as we seek the face of the Lord </p>
                     </div>
@@ -141,36 +144,38 @@ function Homepage() {
 
         {/* Sunday school and open heaven */}
 
-        <div className='container margin2'>
-          <h2 className="h2">Daily Devotion</h2>
-          <div className="gridContainer3">
-            <div className="textContainer">
-              <p>
-                {openHeavenNote.note}
-              </p>
-            </div>
-            <div className="openHeavenImg">
-
-            </div>
-          </div>
-          <button className='btn margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
-        </div>
-
         
-        <div className='container margin2'>
-              <h2 className="h2">Sunday School</h2>
+            <div className='container margin3'>
+              <h2 className="h2">Daily Devotion</h2>
               <div className="gridContainer3">
-                <div className="textContainer">
+                <div className="textContainer grey">
                   <p>
-                    {sundaySchoolNote.note}
+                    {openHeavenNote.note}
                   </p>
+                  <button className='btn margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
                 </div>
-                <div className="sundaySchoolImg">
-    
+                <div className="openHeavenImg">
+
                 </div>
               </div>
-              <button className='btn margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
-        </div>
+            </div>
+
+        
+            <div className='container margin1'>
+                  <h2 className="h2">Sunday School</h2>
+                  <div className="gridContainer3">
+                    <div className="textContainer grey">
+                      <p>
+                        {sundaySchoolNote.note}
+                      </p>
+                      <button className='btn margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
+                    </div>
+                    <div className="sundaySchoolImg">
+        
+                    </div>
+                  </div>
+            </div>
+
 
 
         <div className='containerFluid padding2 margin2 grey'>
