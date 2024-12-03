@@ -8,7 +8,7 @@ function Testimonypage() {
 
     const uploadTestimony=async()=>{
         try {
-            await axios.post('https://haven-of-wisdom-server.onrender.com/api/testimony', {testimony: testimony})
+            await axios.post('https://new-haven-of-wisdom-server.onrender.com/api/testimony', {testimony: testimony})
             window.alert('Testimony uploaded')
         } catch (error) {
             console.log(error)

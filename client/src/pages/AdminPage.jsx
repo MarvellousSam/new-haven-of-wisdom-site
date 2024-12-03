@@ -13,7 +13,7 @@ function AdminPage() {
 
   const verifyUser =async()=>{
     try {
-      await axios.get('https://haven-of-wisdom-server.onrender.com/api/admin',
+      await axios.get('https://new-haven-of-wisdom-server.onrender.com/api/admin',
         {
           headers:{
               Authorization: `Bearer ${token}`
@@ -39,7 +39,7 @@ function AdminPage() {
       const uploadedImageUrl = response.data.secure_url;
       console.log('Upload successful:', uploadedImageUrl);
 
-      await axios.post(`https://haven-of-wisdom-server.onrender.com/api/event`, {imageUrl: uploadedImageUrl},{
+      await axios.post(`https://new-haven-of-wisdom-server.onrender.com/api/event`, {imageUrl: uploadedImageUrl},{
         headers: {
           Authorization: `Bearer ${token}`
         }
@@ -55,7 +55,7 @@ function AdminPage() {
   const deleteEvent=async(id)=>{
     try {
       if(window.confirm('Are you sure you want to delete this event?')){
-        await axios.delete(`https://haven-of-wisdom-server.onrender.com/api/event/${id}`, {
+        await axios.delete(`https://new-haven-of-wisdom-server.onrender.com/api/event/${id}`, {
           headers:{
             Authorization: `Bearer ${token}`
           }
@@ -80,7 +80,7 @@ function AdminPage() {
 
   const fetchEvent =async()=>{
       try {
-        const response = await axios.get('https://haven-of-wisdom-server.onrender.com/api/event')
+        const response = await axios.get('https://new-haven-of-wisdom-server.onrender.com/api/event')
         const resp = response.data.event
         setEvent(resp)
         console.log(resp)
@@ -94,7 +94,7 @@ function AdminPage() {
   const uploadDailyDevotion=async(e)=>{
     try {
       console.log(openHeaven)
-      await axios.post('https://haven-of-wisdom-server.onrender.com/api/dailyDevotion', {contentType: 'openHeaven', note: openHeaven},{
+      await axios.post('https://new-haven-of-wisdom-server.onrender.com/api/dailyDevotion', {contentType: 'openHeaven', note: openHeaven},{
         headers:{
           Authorization: `Bearer ${token}`
         }
@@ -109,7 +109,7 @@ function AdminPage() {
   const uploadSundaySchool=async(e)=>{
     try {
       console.log(openHeaven)
-      await axios.post('https://haven-of-wisdom-server.onrender.com/api/sundaySchool', {contentType: 'sundaySchool', note: sundaySchool},{
+      await axios.post('https://new-haven-of-wisdom-server.onrender.com/api/sundaySchool', {contentType: 'sundaySchool', note: sundaySchool},{
         headers:{
           Authorization: `Bearer ${token}`
         }
@@ -123,7 +123,7 @@ function AdminPage() {
 
   const fetchTestimony =async()=>{
     try {
-      const response = await axios.get('https://haven-of-wisdom-server.onrender.com/api/testimony')
+      const response = await axios.get('https://new-haven-of-wisdom-server.onrender.com/api/testimony')
       const resp = response.data.event
       setTestimony(resp)
       console.log(resp)

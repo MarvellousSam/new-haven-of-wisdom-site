@@ -7,7 +7,7 @@ function Eventpage() {
     const [event, setEvent] = useState([])
     const fetchEvent =async()=>{
     try {
-      const response = await axios.get('https://haven-of-wisdom-server.onrender.com/api/event')
+      const response = await axios.get('https://new-haven-of-wisdom-server.onrender.com/api/event')
       const resp = response.data.event
       setEvent(resp)
     } catch (error) {

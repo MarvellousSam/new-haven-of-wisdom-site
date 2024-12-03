@@ -15,7 +15,7 @@ function Dailydevotionpage() {
 
       const fetchDailyDevotion =async()=>{
         try {
-          const response = await axios.get('https://haven-of-wisdom-server.onrender.com/api/dailyDevotion')
+          const response = await axios.get('https://new-haven-of-wisdom-server.onrender.com/api/dailyDevotion')
           const resp = response.data.note
           setOpenHeaven(resp)
           console.log(response)
@@ -29,7 +29,7 @@ function Dailydevotionpage() {
       const fetchSundaySchool =async()=>{
         try {
           console.log('fetching daily devotion')
-          const response = await axios.get('https://haven-of-wisdom-server.onrender.com/api/sundaySchool')
+          const response = await axios.get('https://new-haven-of-wisdom-server.onrender.com/api/sundaySchool')
           const resp = response.data.note
           setSundaySchoolNote(resp)
           console.log(response)
