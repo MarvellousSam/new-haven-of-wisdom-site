@@ -47,34 +47,30 @@ function Dailydevotionpage() {
         <Navbar/>
         <div className='container'>
             <h2 className="h2">Open Heaven</h2>
-            <div className="openHeavenImg">
-
-            </div>
 
             <div className="gridContainer3">
                 <div className="textContainer longTextContainer">
-                <p>
-                    {openHeavenNote.note}
-                </p>
+                  <p>{openHeavenNote.note}</p>
                 </div>
+                <div className="openHeavenImg">
 
+                </div>
             </div>
         </div>
 
+<hr className='hr' />
 
         <div className='container'>
             <h2 className="h2">Sunday School</h2>
-            <div className="sundaySchoolImg">
 
-            </div>
 
             <div className="gridContainer3">
                 <div className="textContainer longTextContainer">
-                <p>
-                    {sundaySchoolNote.note}
-                </p>
+                  <p>{sundaySchoolNote.note}</p>
                 </div>
+                <div className="sundaySchoolImg">
 
+                </div>
             </div>
         </div>
     </>

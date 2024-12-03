@@ -124,7 +124,7 @@ function AdminPage() {
   const fetchTestimony =async()=>{
     try {
       const response = await axios.get('https://new-haven-of-wisdom-server.onrender.com/api/testimony')
-      const resp = response.data.event
+      const resp = response.data.testimony
       setTestimony(resp)
       console.log(resp)
     } catch (error) {
@@ -164,7 +164,7 @@ function AdminPage() {
 
       {
         testimony.length==0? '' :
-          <div className='containerFluid grey'>
+          <div className='container grey padding1'>
             <h2 className='textCenter'>Testimony</h2>
             <ol>
               {testimonyView}
