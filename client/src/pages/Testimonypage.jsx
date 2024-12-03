@@ -12,7 +12,7 @@ function Testimonypage() {
             window.alert('Testimony uploaded')
         } catch (error) {
             console.log(error)
-            window.alert('Testimony upload failed. Ccheck your internet and try again')
+            window.alert('Testimony upload failed. Check your internet and try again')
         }
     }
   return (
