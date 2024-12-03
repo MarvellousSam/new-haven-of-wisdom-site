@@ -169,7 +169,7 @@ ul{
 }
 .landingPage{
   width: 100%;
-  height: 70vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -180,8 +180,6 @@ ul{
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 70px;
-  animation: fadeInZoom 1s ease-in;
-  animation-iteration-count: 1;
 }
 @keyframes fadeInAnimation {
   0%{
@@ -610,8 +608,9 @@ footer{
   .landingPage{
     display: block;
     padding: 20px;
-    padding-top: 100px;
+    padding-top: 200px;
     margin-bottom: 50px;
+    height: 70vh;
   }
   .openHeavenImg{
     display: none;
