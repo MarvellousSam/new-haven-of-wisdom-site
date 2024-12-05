@@ -26,10 +26,10 @@ function Testimonypage() {
             </h1>
         </div>
 
-        <div className="container padding1 margin1 grey">
+        <div className="container padding1 margin1 primaryColor">
             <h2>ENTER YOUR TESTIMONY</h2>
             <textarea className='noteInput' name="testimony" id="testimony" value={testimony} onChange={(e)=>{setTestimony(e.target.value)}}></textarea> <br />
-            <button className='uploadBtn margin1' onClick={uploadTestimony}>Upload</button>
+            <button className='uploadBtn margin1 accentColor' onClick={uploadTestimony}>Upload</button>
         </div>
     </>
 

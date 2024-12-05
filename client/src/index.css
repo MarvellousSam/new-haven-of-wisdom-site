@@ -26,16 +26,16 @@ ul{
 .h2{
   font-size: 35px;
   text-align: center;
-  color: rgb(4, 4, 85);
+  color: rgb(1, 1, 51);
   margin: 20px;
 }
 .h3{
   font-size: 30px;
   text-align: center;
-  color: rgb(4, 4, 85);
+  color: rgb(1, 1, 51);
 }
 .dark{
-  color: rgb(2, 18, 97);
+  color:rgb(1, 1, 51);;
 }
 .italic{
   margin-top: 20px;
@@ -53,6 +53,12 @@ ul{
 .grey{
   background-color: rgba(197, 192, 192, 0.603);
 }
+.primaryColor{
+  background-color: rgba(254, 195, 173, 0.504);
+}
+.accentColor{
+  background-color: rgb(110, 30, 1);
+}
 .black{
   background-color: black;
   color: white;
@@ -63,7 +69,9 @@ ul{
 .white{
   color: white;
 }
-
+.whiteBg{
+  background-color: white;
+}
 .toggleIcon{
   color: rgb(51, 1, 53);
 }
@@ -80,7 +88,7 @@ ul{
   padding: 0px 10px;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1px 1px 1px rgba(174, 0, 255, 0.512);
+  box-shadow: 1px 1px 1px rgba(255, 55, 0, 0.512);
 }
 .navContainer h1{
   color: rgb(1, 15, 54);
@@ -92,14 +100,14 @@ ul{
 .navList{
   font-size: 20px;
   margin-top: 10px;
-  border-bottom: 2px rgba(221, 0, 255, 0.318) solid;
+  border-bottom: 2px rgb(110, 30, 1) solid;
 }
 .navContainer ul li{
   font-size: 15px;
   font-weight: 700;
   margin-left: 10px;
   margin-right: 20px;
-  color: rgb(1, 15, 54);
+  color: rgb(143, 40, 3);
 }
 .navContainer ul li:hover{
   cursor: pointer;
@@ -115,7 +123,6 @@ ul{
   top: 1px;
   right: 1px;
   z-index: 1000;
-  background-color: rgb(117, 4, 117);
   color: white;
   width: 80%;
   height: 90vh;
@@ -212,7 +219,7 @@ ul{
   color: rgb(214, 210, 210);
 }
 .textDecorate{
-  border-bottom: 5px solid rgb(136, 0, 255);
+  border-bottom: 3px solid rgb(255, 102, 0);
   color: rgb(255, 255, 255);
   font-size: 60px;
 }
@@ -221,7 +228,6 @@ ul{
   font-size: 30px;
   text-align: center;
   color: rgb(1, 1, 82);
-  border-bottom: 2px solid red;
 }
 button{
   background-color: rgb(255, 255, 255);
@@ -304,12 +310,11 @@ button:hover{
   height: 40px;
   border: 0px solid;
   border-radius: 5px;
-  background-color: rgb(42, 1, 52);
   color: white;
   margin-top: 10px;
 }
 .uploadBtn:hover{
-  background-color: rgb(87, 4, 107);
+  background-color: rgb(164, 45, 2);
 }
 .btn{
   display: block;
@@ -319,11 +324,10 @@ button:hover{
   height: 50px;
   border: 0px solid;
   border-radius: 5px;
-  background-color: rgb(42, 1, 52);
   color: white;
 }
 .btn:hover{
-  background-color: rgb(71, 3, 114);
+  background-color: rgb(167, 46, 2);
   color: rgb(255, 255, 255);
 }
 .boldText{
@@ -606,10 +610,10 @@ footer{
     height: 200px;
   }
   .landingPage{
-    display: block;
+    display: flex;
     padding: 20px;
-    padding-top: 200px;
-    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
     height: 70vh;
   }
   .openHeavenImg{

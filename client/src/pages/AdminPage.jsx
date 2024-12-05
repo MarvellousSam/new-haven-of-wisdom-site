@@ -164,7 +164,7 @@ function AdminPage() {
 
       {
         testimony.length==0? '' :
-          <div className='container grey padding1'>
+          <div className='container primaryColor padding1'>
             <h2 className='textCenter'>Testimony</h2>
             <ol>
               {testimonyView}
@@ -173,12 +173,12 @@ function AdminPage() {
       }
 
 
-        <div className='container grey margin1 padding1'>
+        <div className='container primaryColor margin1 padding1'>
 
             <div>
               <h2>Upload Event Flier</h2>
               <input type="file" accept='image/*' onChange={(e) => setImage(e.target.files[0])} /> <br />
-              <button className='uploadBtn' onClick={uploadImage}>Upload</button>
+              <button className='uploadBtn accentColor' onClick={uploadImage}>Upload</button>
             </div>
 
             <div>
@@ -189,18 +189,18 @@ function AdminPage() {
             <div>
               <h2>Open Heaven for Today</h2>
               <textarea className='noteInput' name="note" id="note" value={openHeaven} onChange={(e)=>{setOpenHeaven(e.target.value)}}></textarea> 
-              <button className='uploadBtn' onClick={uploadDailyDevotion}>Upload</button>   
+              <button className='uploadBtn accentColor' onClick={uploadDailyDevotion}>Upload</button>   
             </div>
 
 
             <div>
               <h2>Sunday School</h2>
               <textarea className='noteInput' name="note" id="note" value={sundaySchool} onChange={(e)=>{setSundaySchool(e.target.value)}}></textarea> 
-              <button className='uploadBtn' onClick={uploadSundaySchool}>Upload</button>   
+              <button className='uploadBtn accentColor' onClick={uploadSundaySchool}>Upload</button>   
             </div>
 
 
-            <button className='btn margin2' onClick={logOut}>Log Out</button>
+            <button className='btn margin2 accentColor' onClick={logOut}>Log Out</button>
         </div>
     </>
   )

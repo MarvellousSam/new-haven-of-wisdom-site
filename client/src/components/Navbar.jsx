@@ -37,7 +37,7 @@ function Navbar() {
                 <li className='navLink' onClick={()=>{navigate('/about')}}> WHO ARE WE</li>
                 <li className='navLink' onClick={()=>{navigate('/mission')}}>WHAT WE DO</li>
                 <li className='navLink' onClick={()=>{navigate('/giving')}}> ONLINE GIVING  </li>
-                <li className='navLink' onClick={()=>{navigate('/login')}}> <FaUser size={20} color='blue'/>  </li>
+                <li className='navLink' onClick={()=>{navigate('/login')}}> <FaUser size={20} color='darkorange'/>  </li>
               </ul>
             </div>
             <div className="mobile" onClick={toggleSideMenu}>
@@ -46,7 +46,7 @@ function Navbar() {
           </div>
           
             {show && 
-             <div className='menuDropdown'>
+             <div className='menuDropdown accentColor'>
                 <header>
                   <FiX size={40} onClick={toggleSideMenu}/>
                 </header>

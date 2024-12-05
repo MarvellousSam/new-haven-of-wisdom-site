@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import Logo from '../images/rccglogo.jpg'
 import axios from 'axios'
 import { useNavigate} from 'react-router-dom'
@@ -56,7 +56,7 @@ function Homepage() {
       <motion.div 
             className='landingPage '
             initial={{opacity:0.5}}
-            animate={{opacity: 1}}
+            whileInView={{opacity: 1}}
             transition={{duration: 0.2}}
       >
         <motion.h1 
@@ -65,30 +65,29 @@ function Homepage() {
         transition={{delay:0.5, duration:1, type: 'tween'}}
         >
           THE <span className='textDecorate'>REDEEMED</span>  <br /> CHRISTIAN CHURCH OF GOD</motion.h1>
-        <motion.p initial={{opacity: 0, x: 200}} animate={{opacity: 1, x:0}} transition={{duration:1,delay: 1, type: 'tween'}}>Jesus Christ the same yesterday, and today and forever -Heb 13:8</motion.p>
+        <motion.p initial={{opacity: 0, x: 200}} animate={{opacity: 1, x:0}} transition={{duration:2,delay: 1.5, type: 'tween'}}>Jesus Christ the same yesterday, and today and forever -Heb 13:8</motion.p>
       </motion.div>
 
 
 
       <motion.div 
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
-            transition={{duration: 1, delay: 0.2, type: 'tween'}}
             className="container">
         <div className='gridContainer1'>
           <motion.div 
-                  initial={{ opacity: 0}}
-                  whileInView={{ opacity: 1}}
-                  transition={{duration: 0.5, delay:0.2, type:'tween'}}
-                  className='grey padding1'>
+                  initial={{ opacity: 0.7, scale: 0.9}}
+                  whileInView={{ opacity: 1, scale:1}}
+                  transition={{duration: 0.5, delay:0, type:'tween'}}
+                  viewport={{amount: 0.3, once: true}}
+                  className='primaryColor padding1'>
             <span className='dec1'>HAVEN OF WISDOM</span> <br /> IS NOT JUST A CHURCH <br />
             WE ARE ONE BIG <span className='red'>FAMILY</span> <br />
             IN THE BODY OF CHRIST
           </motion.div>
           <motion.div
-                  initial={{ opacity: 0,}}
-                  whileInView={{ opacity: 1}}
-                  transition={{duration: 1, delay: 0.2, type: 'tween'}}
+                  initial={{ opacity: 0.7, scale:0.9}}
+                  whileInView={{ opacity: 1, scale: 1}}
+                  transition={{duration: 0.5, delay: 0, type: 'tween'}}
+                  viewport={{amount: 0.3, once: true}}
                   className='announcement'>
               
           </motion.div>
@@ -96,12 +95,10 @@ function Homepage() {
       </motion.div>
 
 
-      {event.length==0? '': eventImage}
 
-                  <hr/>
 
         <div className="containerFluid">
-          <div className='gridContainer1 grey margin2 padding1'>
+          <div className='gridContainer1 primaryColor margin2 padding1'>
             <div className='sundayWorshipImg'>
                   
             </div>
@@ -109,6 +106,7 @@ function Homepage() {
               <motion.main
                 initial={{ opacity: 0, y: 100}}
                 whileInView={{ opacity: 1, y: 0}}
+                viewport={{once:true}}
                 transition={{duration: 1, delay: 0, type: 'tween'}}
               >
                 OUR SUNDAY SERVICE HOLDS <span className='dec1'>EVERY SUNDAY</span> <br />
@@ -120,10 +118,7 @@ function Homepage() {
           </div>
         </div>
 
-        <hr />
 
-
-        
 
 
         <div className='container'>
@@ -133,11 +128,12 @@ function Homepage() {
             <div className='gridContainer2 rowGap'>
                 <motion.div 
                 className="gridContainer2 noGap"
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x:0 }}
-                transition={{duration: 1, delay: 0, type: 'tween'}}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{duration: 1, delay: 0.1, type: 'tween'}}
+                viewport={{amount: 0.1}}
                 >
-                    <div className="textContainer3 grey">
+                    <div className="textContainer3 primaryColor">
                       <h2>Digging Deep</h2>
                       <p>Join us every <span className='red'>Tuesday</span> where we get to know more about the Word of God</p>
                     </div>
@@ -149,11 +145,12 @@ function Homepage() {
 
                 <motion.div 
                 className="gridContainer2 noGap"
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x:0 }}
-                transition={{duration: 1, delay: 0, type: 'tween'}}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{duration: 1, delay: 0.1, type: 'tween'}}
+                viewport={{amount:0.1}}
                 >
-                  <div className="textContainer3 grey">
+                  <div className="textContainer3 primaryColor">
                       <h2>Faith Clinic</h2>
                       <p>Join us every <span className="red">Thursday</span> as we seek the face of the Lord </p>
                     </div>
@@ -169,6 +166,7 @@ function Homepage() {
                 initial={{ opacity: 0, y: 100}}
                 whileInView={{ opacity: 1, y: 0}}
                 transition={{duration: 1, delay: 0, type: 'tween'}}
+                viewport={{once: true}}
             >
               <h2>Thanksgiving Service</h2>
               Join us every First Sunday of the month for our thansgiving service where we come together <br />
@@ -180,7 +178,8 @@ function Homepage() {
               <motion.div
               initial={{opacity:0}}
               whileInView={{opacity:1}}
-              transition={{duration:1, delay: 0.2}}
+              transition={{duration:0.5, delay: 0.1}}
+              viewport={{amount: 0.1}}
               className='youthServiceImg'>
                 <h2>Youth Xpression Service</h2>
                 Holds at every 3rd Sunday of the month
@@ -189,7 +188,8 @@ function Homepage() {
               <motion.div 
               initial={{opacity:0}}
               whileInView={{opacity:1}}
-              transition={{duration:1, delay: 0.2}}
+              transition={{duration:0.5, delay: 0.1}}
+              viewport={{amount: 0.1}}
               className='breakthroughImg'>
                 <h2>Breakthrough Service</h2>
                 Holds at every 2nd Saturday of the month
@@ -202,52 +202,58 @@ function Homepage() {
         {/* Sunday school and open heaven */}
 
         
+        <div className="containerFluid primaryColor padding1">
             <motion.div 
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
-            transition={{duration: 1, delay: 0, type: 'tween'}}
-            className='container margin3'>
-              <div className="gridContainer3">
-                <div className="textContainer grey">
-                  <h3>Daily Devotion</h3>
-                  <p>
-                    {openHeavenNote.note}
-                  </p>
-                  <button className='btn margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
-                </div>
-                <div className="openHeavenImg">
-
-                </div>
-              </div>
-            </motion.div>
-
-        
-            <motion.div 
-            initial={{ opacity: 0}}
-            whileInView={{ opacity: 1}}
-            transition={{duration: 1, delay: 0, type: 'tween'}}
-            className='container margin1'>
+                initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                transition={{duration: 1, delay: 0.1, type: 'tween'}}
+                className='container margin2'>
                   <div className="gridContainer3">
-                    <div className="textContainer grey">
-                      <h3>Sunday School</h3>
+                    <div className="textContainer whiteBg">
+                      <h3>Daily Devotion</h3>
                       <p>
-                        {sundaySchoolNote.note}
+                        {openHeavenNote.note}
                       </p>
-                      <button className='btn margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
+                      <button className='btn accentColor margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
                     </div>
-                    <div className="sundaySchoolImg">
-        
+                    <div className="openHeavenImg">
+
                     </div>
                   </div>
-            </motion.div>
+                </motion.div>
 
+        
+                <motion.div 
+                initial={{ opacity: 0}}
+                whileInView={{ opacity: 1}}
+                transition={{duration: 1, delay: 0.1, type: 'tween'}}
+                className='container margin2'>
+                      <div className="gridContainer3">
+                        <div className="textContainer whiteBg">
+                          <h3>Sunday School</h3>
+                          <p>
+                            {sundaySchoolNote.note}
+                          </p>
+                          <button className='btn accentColor margin1' onClick={()=>{navigate('/dailydevotion')}}>Read more</button>
+                        </div>
+                        <div className="sundaySchoolImg">
+            
+                        </div>
+                      </div>
+                </motion.div>
+        </div>
+
+
+        {/* Upcoming event container view */}
+        {event.length==0? '': eventImage}
 
 
         <motion.div 
             initial={{ opacity: 0, y: 100}}
             whileInView={{ opacity: 1, y: 0}}
             transition={{duration: 1, delay: 0, type: 'tween'}}
-            className='containerFluid padding2 margin2 grey'>
+            viewport={{once: true}}
+            className='containerFluid padding2 margin2 primaryColor'>
             <header>
               <h2 className='h2'>Online Giving</h2>
             </header>
@@ -256,7 +262,7 @@ function Homepage() {
 
               <div className='offeringImg'>
                 <p className='padding2'>Pay your offering, tithe and first fruit.</p>
-                <button className='btn' onClick={()=>{navigate('/giving')}}>Pay Now</button> 
+                <button className='btn accentColor' onClick={()=>{navigate('/giving')}}>Pay Now</button> 
               </div>
 
               <div className='textContainer3'>
@@ -282,7 +288,7 @@ function Homepage() {
                 <p className='padding2'>
                   Support the mission
                 </p>
-                <button className='btn' onClick={()=>{navigate('/giving')}}>Support </button>
+                <button className='btn accentColor' onClick={()=>{navigate('/giving')}}>Support </button>
               </div>
 
             </div>
@@ -302,7 +308,6 @@ function Homepage() {
           </div>
         </div> */}
 
-        <hr />
         <footer className='containerFluid padding1'>
           <div className='gridContainer1 rowGap'>
             <div>

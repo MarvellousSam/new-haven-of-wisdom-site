@@ -38,13 +38,13 @@ function Loginpage() {
   return (
     <>
         <Navbar/>
-        <div className='container grey page margin1'>
+        <div className='container primaryColor page margin1'>
             <header>
                 <h2 className='h3'>Admin Login</h2>
             </header>
             <input className='input' type="text" name="userId" id="userId" placeholder='Enter UserId' value={userId} onChange={onChange} />
             <input className='input' type="text" name="password" id="password" placeholder='Enter Password' value={password} onChange={onChange} />
-            <button className='btn margin1' onClick={submit}>Login</button>
+            <button className='btn accentColor margin1' onClick={submit}>Login</button>
         </div>
 
     </>

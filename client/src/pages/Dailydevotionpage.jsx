@@ -58,19 +58,17 @@ function Dailydevotionpage() {
             </div>
         </div>
 
-<hr className='hr' />
+        <hr className='hr' />
 
         <div className='container'>
             <h2 className="h2">Sunday School</h2>
-
-
             <div className="gridContainer3">
-                <div className="textContainer longTextContainer">
-                  <p>{sundaySchoolNote.note}</p>
-                </div>
-                <div className="sundaySchoolImg">
+                  <div className="textContainer longTextContainer">
+                      <p>{sundaySchoolNote.note}</p>
+                  </div>
+                  <div className="sundaySchoolImg">
 
-                </div>
+                  </div>
             </div>
         </div>
     </>
