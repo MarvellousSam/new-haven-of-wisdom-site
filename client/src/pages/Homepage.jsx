@@ -169,7 +169,7 @@ function Homepage() {
                 viewport={{once: true}}
             >
               <h2>Thanksgiving Service</h2>
-              Join us every First Sunday of the month for our thansgiving service where we come together <br />
+              Join us every First Sunday of the month for our thanksgiving service where we come together <br />
               to show our gratitude back to our maker.
             </motion.main>
           </div>
@@ -182,7 +182,7 @@ function Homepage() {
               viewport={{amount: 0.1}}
               className='youthServiceImg'>
                 <h2>Youth Xpression Service</h2>
-                Holds at every 3rd Sunday of the month
+                Holds every 3rd Sunday of the month
               </motion.div>
 
               <motion.div 
@@ -192,7 +192,7 @@ function Homepage() {
               viewport={{amount: 0.1}}
               className='breakthroughImg'>
                 <h2>Breakthrough Service</h2>
-                Holds at every 2nd Saturday of the month
+                Holds every 2nd Saturday of the month
               </motion.div>
           </div>
 
@@ -280,7 +280,7 @@ function Homepage() {
                 <p>
                   You can support the mission by donating <br />
                   to facilitate the smooth running of the kingdom's business. <br />
-                  The Lord Almighty will bless you as you support us.<br />
+                  The Lord Almighty will bless you as you do.<br />
                 </p>
               </div>
 
