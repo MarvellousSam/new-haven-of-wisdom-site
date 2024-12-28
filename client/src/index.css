@@ -125,7 +125,7 @@ ul{
   z-index: 1000;
   color: white;
   width: 80%;
-  height: 90vh;
+  height: 100vh;
   padding: 10px;
   animation: slideInAnimation 0.7s ;
 }
