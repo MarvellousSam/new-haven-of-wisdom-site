@@ -79,9 +79,9 @@ function Homepage() {
                   transition={{duration: 0.5, delay:0, type:'tween'}}
                   viewport={{amount: 0.3, once: true}}
                   className='primaryColor padding1'>
-            <span className='dec1'>HAVEN OF WISDOM</span> <br /> IS NOT JUST A CHURCH <br />
-            WE ARE ONE BIG <span className='red'>FAMILY</span> <br />
-            IN THE BODY OF CHRIST
+            <span className='dec1'>HAVEN OF WISDOM</span> <br /> is not just a church <br />
+            we are one big <span className='red'>family</span> <br />
+            in the body of christ
           </motion.div>
           <motion.div
                   initial={{ opacity: 0.7, scale:0.9}}
@@ -109,9 +109,9 @@ function Homepage() {
                 viewport={{once:true}}
                 transition={{duration: 1, delay: 0, type: 'tween'}}
               >
-                OUR SUNDAY SERVICE HOLDS <span className='dec1'>EVERY SUNDAY</span> <br />
+                Our SUNDAY service holds every <span className='dec1'>Sunday</span> <br />
                   <br />
-                  JOIN US TO EXPERIENCE THE MIGHTY HAND OF GOD IN YOUR LIFE AS HE TRANSFORMS YOUR LIFE. <br /> <br />
+                  Join us to experience the mighty hand of God In your life as HE transforms you. <br /> <br />
                   <span className="smallText dark margin1"><CiLocationOn size={20}/>13, OGUNIYI STREET, ANTHONY VILLAGE, LAGOS STATE, NIGERIA</span>
               </motion.main>
             </div>  
