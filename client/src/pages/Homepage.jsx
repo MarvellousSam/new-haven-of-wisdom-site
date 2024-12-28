@@ -80,7 +80,7 @@ function Homepage() {
                   viewport={{amount: 0.3, once: true}}
                   className='primaryColor padding1'>
             <span className='dec1'>HAVEN OF WISDOM</span> <br /> is not just a church <br />
-            we are one big <span className='red'>family</span> <br />
+            We are one big <span className='red'>family</span> <br />
             in the body of christ
           </motion.div>
           <motion.div
@@ -109,7 +109,7 @@ function Homepage() {
                 viewport={{once:true}}
                 transition={{duration: 1, delay: 0, type: 'tween'}}
               >
-                Our SUNDAY service holds every <span className='dec1'>Sunday</span> <br />
+                Our Sunday service holds every <span className='dec1'>Sunday</span> <br />
                   <br />
                   Join us to experience the mighty hand of God In your life as HE transforms you. <br /> <br />
                   <span className="smallText dark margin1"><CiLocationOn size={20}/>13, OGUNIYI STREET, ANTHONY VILLAGE, LAGOS STATE, NIGERIA</span>
